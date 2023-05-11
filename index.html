@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curriculum Vitae Victor Tejada</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Victor Tejada</h1>
+                <h2>Software Developer</h2>
+            </div>
+        </header>
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="flex">
+                <div class="flex-item">
+                    <h3>Claro</h3>
+                    <p>Number Management Analyst (2018-2023)</p>
+                    <p>Led and Admin of the Phone Number Inventory, analyzing, maintaining, reserving and adjusting the phone numbers, including data 
+                        about the numbers that are assigned to the operator’s end-customers using SAS, Oracle DB, SQL, and Data step.</p>
+                </div>
+                <div class="flex-item">
+                    <h3>Quickarr</h3>
+                    <p>Software Developer (2016-2018)</p>
+                    <p>Worked as a Principal Developer of the private Customer Billing System in the Automotive Business, selling and mantaining the Software with the SaaS model.</p>
+                </div>
+            </div>
+            <h2>Education</h2>
+            <div class="flex">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li> 
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="flex-item">
+                                <h3>Universidad del Caribe (Unicaribe)</h3>
+                                <p>Bachelor of Science in Software Engineering (2018-Present)</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula vestibulum ante, sed tempus orci. Nullam id justo leo.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="flex-item">
+                                <h3>Instituto Politécnico Loyola (IPL)</h3>
+                                <p>Technologist of Microcomputing, Computer Science and Digital Electronic (2012-2016)</p>
+                                <p>Relevant courses included, Computer Science, Digital Electronics, Machine level code (ASM), Microcomputing, Data Analyst, Digital Logic, Embedded Systems, and Embedded Coding.</p>
+                            </div>
+                        </div> 
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+
+        $(".step").click(function () {
+          $(this).addClass("active").prevAll().addClass("active");
+          $(this).nextAll().removeClass("active");
+        });
+    
+        $(".step01").click(function () {
+          $("#line-progress").css("width", "3%");
+          $(".discovery").addClass("active").siblings().removeClass("active");
+        });
+    
+        $(".step02").click(function () {
+          $("#line-progress").css("width", "25%");
+          $(".strategy").addClass("active").siblings().removeClass("active");
+        });  
+      </script>
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+      <!-- Bootstrap JS CDN Link  -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+</html>
